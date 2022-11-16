@@ -19,9 +19,10 @@ class DatabaseSeeder extends Seeder
             DepartamentoSeeder::class,
             // ProvinciaSeeder::class,
             DistritoSeeder::class,
-            // CategoriaSeeder::class,
-            // TipoDePrendaSeeder::class,
-            // PersonaSeeder::class,
+            CategoriaSeeder::class,
+            ServicioSeeder::class,
+            TipoPersonaSeeder::class,
+            TipoDePrendaSeeder::class,
             // PrendaSeeder::class,
         ]);
 
