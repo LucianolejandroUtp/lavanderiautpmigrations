@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             CategoriaSeeder::class,
             ServicioSeeder::class,
             TipoPersonaSeeder::class,
+            PersonaSeeder::class,
             TipoDePrendaSeeder::class,
             // PrendaSeeder::class,
         ]);
