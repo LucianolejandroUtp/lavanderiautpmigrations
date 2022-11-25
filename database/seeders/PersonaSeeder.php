@@ -23,7 +23,11 @@ class PersonaSeeder extends Seeder
                 'apellidos' => 'n/a',
                 'dni' => 'n/a',
                 'email' => $email,
-                'password' => bcrypt('12345678'),
+
+                'password' => "CPHNXBJs5Ck0JWfgf3/GFBPU/fVyoiwr",
+                // No se usa esta implementación debido a la falta de compatibilidad con jasypt de Java
+                // 'password' => bcrypt('12345678'),
+
                 'tipo_persona_id' => 1,
                 'estado' => 'activo',
                 'created_at' => now(),
