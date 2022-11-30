@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Factura extends Migration
+class Comprobante extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class Factura extends Migration
      */
     public function up()
     {
-        Schema::create('factura', function (Blueprint $table) {
+        Schema::create('comprobante', function (Blueprint $table) {
             $table->id();
             $table->uuid('unique_id')->unique();
             $table->string('numero')->nullable();
             $table->string('serie')->nullable();
-            $table->string('tipo')->nullable();
+            $table->enum('tipo', ['factura', 'boleta'])->default('boleta');
+            // $table->string('tipo')->nullable();
             $table->date('fecha')->nullable();
             $table->time('hora')->nullable();
             // $table->enum('estado', ['ACTIVO', 'INACTIVO'])->default('ACTIVO');
@@ -41,6 +42,6 @@ class Factura extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('factura');
+        Schema::dropIfExists('comprobante');
     }
 }

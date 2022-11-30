@@ -19,7 +19,7 @@ class Vehiculo extends Migration
             $table->string('placa')->nullable();
             $table->string('marca')->nullable();
             $table->string('modelo')->nullable();
-            // $table->string('color')->nullable();
+            $table->string('color')->nullable();
             // $table->enum('estado', ['ACTIVO', 'INACTIVO'])->default('ACTIVO');
             // $table->softDeletes();
             $table->enum('estado', ['activo','inactivo','eliminado'])->default('activo');

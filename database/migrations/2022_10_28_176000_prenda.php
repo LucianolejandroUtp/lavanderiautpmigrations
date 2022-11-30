@@ -28,9 +28,11 @@ class Prenda extends Migration
 
             $table->unsignedBigInteger('tipo_de_prenda_id')->nullable();
             $table->unsignedBigInteger('persona_id')->nullable();
+            $table->unsignedBigInteger('servicio_id')->nullable();
 
             $table->foreign('tipo_de_prenda_id')->references('id')->on('tipo_de_prenda');
             $table->foreign('persona_id')->references('id')->on('persona');
+            $table->foreign('servicio_id')->references('id')->on('servicio');
         });
     }
 
