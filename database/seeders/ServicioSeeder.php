@@ -44,7 +44,7 @@ class ServicioSeeder extends Seeder
             'Media bolsa de lavandería',
             'Bolsa de lavandería',
         ],[
-            'Media bolsa de lavandería: 5 kilos',
+            'Media bolsa de lavandería: 4 kilos',
             'Bolsa de lavandería: 8 kilos',
         ]);
 
