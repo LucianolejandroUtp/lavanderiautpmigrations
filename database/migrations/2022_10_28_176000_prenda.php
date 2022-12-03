@@ -21,7 +21,7 @@ class Prenda extends Migration
             $table->string('color')->nullable();
             $table->string('marca')->nullable();
             $table->string('estado_de_prenda')->nullable();
-            $table->double('peso')->nullable();
+            // $table->double('peso')->nullable();
             $table->text('observacion')->nullable();
             $table->enum('estado', ['activo','inactivo','eliminado'])->default('activo');
             $table->timestamps();
