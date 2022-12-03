@@ -36,14 +36,17 @@ class PersonaSeeder extends Seeder
             'Admin',
             'ClientePrueba01',
             'EmpleadoPrueba01',
+            'ChóferPrueba01',
         ],[
             'admin@admin.com',
             'cli@gmail.com',
             'emp@gmail.com',
+            'chofer@gmail.com',
         ],[
             1,
             2,
             3,
+            5,
         ]);
     }
 }
