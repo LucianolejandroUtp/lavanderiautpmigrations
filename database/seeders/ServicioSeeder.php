@@ -30,11 +30,12 @@ class ServicioSeeder extends Seeder
             'Prenda solo planchada',
         ]);
 
-        array_map(function ($servicio, $detalles) {
+        array_map(function ($servicio, $detalles, $precio) {
             DB::table('servicio')->insert([
                 'unique_id' => Str::uuid(),
                 'descripcion' => $servicio,
                 'detalles' => $detalles,
+                'precio' => $precio,
                 'estado' => 'activo',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -46,6 +47,9 @@ class ServicioSeeder extends Seeder
         ],[
             'Media bolsa de lavandería: 4 kilos',
             'Bolsa de lavandería: 8 kilos',
+        ],[
+            20,
+            40,
         ]);
 
         array_map(function ($servicio){

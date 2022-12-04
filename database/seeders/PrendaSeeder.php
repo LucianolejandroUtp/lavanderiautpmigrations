@@ -78,8 +78,8 @@ class PrendaSeeder extends Seeder
         ],[
             //Empleado
             5,
-            6,
-            7,
+            5,
+            5,
             5,
             6,
         ],[
