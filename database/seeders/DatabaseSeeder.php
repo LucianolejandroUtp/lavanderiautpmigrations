@@ -23,8 +23,9 @@ class DatabaseSeeder extends Seeder
             ServicioSeeder::class,
             TipoPersonaSeeder::class,
             PersonaSeeder::class,
+            VehiculoSeeder::class,
             TipoDePrendaSeeder::class,
-            // PrendaSeeder::class,
+            PrendaSeeder::class,
         ]);
 
     }
