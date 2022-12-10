@@ -14,7 +14,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-
         $this->call([
             DepartamentoSeeder::class,
             // ProvinciaSeeder::class,
@@ -24,9 +23,9 @@ class DatabaseSeeder extends Seeder
             TipoPersonaSeeder::class,
             PersonaSeeder::class,
             VehiculoSeeder::class,
+            CitaSeeder::class,
             TipoDePrendaSeeder::class,
             PrendaSeeder::class,
         ]);
-
     }
 }
