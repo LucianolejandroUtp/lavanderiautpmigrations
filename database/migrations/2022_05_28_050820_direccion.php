@@ -24,9 +24,11 @@ class Direccion extends Migration
             $table->enum('estado', ['activo','inactivo','eliminado'])->default('activo');
             $table->timestamps();
 
+            $table->unsignedBigInteger('persona_id')->nullable();
             $table->unsignedBigInteger('distrito_id')->nullable();
             // $table->unsignedBigInteger('persona_id')->nullable();
 
+            $table->foreign('persona_id')->references('id')->on('persona');
             $table->foreign('distrito_id')->references('id')->on('distrito');
             // $table->foreign('persona_id')->references('id')->on('persona');
         });
