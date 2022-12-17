@@ -15,12 +15,12 @@ class PersonaSeeder extends Seeder
      */
     public function run()
     {
-        array_map(function ($nombre, $email, $tipo_persona_id){
+        array_map(function ($nombre, $apellidos, $email, $dni, $tipo_persona_id){
             DB::table('persona')->insert([
                 'unique_id' => Str::uuid(),
                 'nombres' => $nombre,
-                'apellidos' => 'n/a',
-                'dni' => 'n/a',
+                'apellidos' => $apellidos,
+                'dni' => $dni,
                 'email' => $email,
 
                 'password' => "CPHNXBJs5Ck0JWfgf3/GFBPU/fVyoiwr",
@@ -45,6 +45,18 @@ class PersonaSeeder extends Seeder
             'ChóferPrueba03',
             'ChóferPrueba04',
         ],[
+            'Admin Admin',
+            'Martinez Martinez',
+            'Perez Perez',
+            'Gonzales Gonzales',
+            'Solis Solis',
+            'Garcia Garcia',
+            'Lopez Lopez',
+            'Quispe Quispe',
+            'Yupanqui Yupanqui',
+            'Pachacuti Pachacuti',
+            'Atahualpa Atahualpa',
+        ],[
             'admin@admin.com',
             'cli@gmail.com',
             'cli2@gmail.com',
@@ -56,6 +68,18 @@ class PersonaSeeder extends Seeder
             'chofer2@gmail.com',
             'chofer3@gmail.com',
             'chofer4@gmail.com',
+        ],[
+            '11111111',
+            '22222222',
+            '33333333',
+            '44444444',
+            '55555555',
+            '66666666',
+            '77777777',
+            '88888888',
+            '99999999',
+            '10101010',
+            '11011011',
         ],[
             1,
             2,
