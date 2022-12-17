@@ -86,11 +86,11 @@ class ServicioSeeder extends Seeder
             'Vestido de fiesta: 1 vestido',
             'Saco y chompa: 1 saco y 1 chompa',
         ],[
-            20,
-            20,
-            20,
-            20,
-            20,
+            15,
+            25,
+            35,
+            45,
+            55,
         ]);
 
         array_map(function ($servicio, $detalles, $precio) {
@@ -117,11 +117,11 @@ class ServicioSeeder extends Seeder
             'Cobijas o colchas: 1 cobija o colcha',
             'Cortinas: 1 cortina',
         ],[
-            20,
-            20,
-            20,
-            20,
-            20,
+            75,
+            80,
+            85,
+            90,
+            95,
         ]);
     }
 }
