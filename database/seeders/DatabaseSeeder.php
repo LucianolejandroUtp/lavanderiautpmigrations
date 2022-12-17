@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use DetalleComprobante;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,6 +23,10 @@ class DatabaseSeeder extends Seeder
             ServicioSeeder::class,
             TipoPersonaSeeder::class,
             PersonaSeeder::class,
+            DireccionSeeder::class,
+            TelefonoSeeder::class,
+            ComprobanteSeeder::class,
+            DetalleComprobanteSeeder::class,
             VehiculoSeeder::class,
             CitaSeeder::class,
             TipoDePrendaSeeder::class,

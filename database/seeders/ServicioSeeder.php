@@ -15,10 +15,12 @@ class ServicioSeeder extends Seeder
      */
     public function run()
     {
-        array_map(function ($servicio){
+        array_map(function ($servicio, $detalles, $precio) {
             DB::table('servicio')->insert([
                 'unique_id' => Str::uuid(),
                 'descripcion' => $servicio,
+                'detalles' => $detalles,
+                'precio' => $precio,
                 'estado' => 'activo',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -28,6 +30,14 @@ class ServicioSeeder extends Seeder
             'Docena planchada',
             'Prenda lavada y planchada',
             'Prenda solo planchada',
+        ],[
+            'Docena planchada: 12 prendas',
+            'Prenda lavada y planchada: 1 prenda',
+            'Prenda solo planchada: 1 prenda',
+        ],[
+            60,
+            10,
+            5,
         ]);
 
         array_map(function ($servicio, $detalles, $precio) {
@@ -52,10 +62,12 @@ class ServicioSeeder extends Seeder
             40,
         ]);
 
-        array_map(function ($servicio){
+        array_map(function ($servicio, $detalles, $precio) {
             DB::table('servicio')->insert([
                 'unique_id' => Str::uuid(),
                 'descripcion' => $servicio,
+                'detalles' => $detalles,
+                'precio' => $precio,
                 'estado' => 'activo',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -67,12 +79,26 @@ class ServicioSeeder extends Seeder
             'Camisa y pantalón',
             'Vestido de fiesta',
             'Saco y chompa',
+        ],[
+            'Terno de 2 piezas: 1 terno',
+            'Abrigo y corbatas: 1 abrigo y 1 corbata',
+            'Camisa y pantalón: 1 camisa y 1 pantalón',
+            'Vestido de fiesta: 1 vestido',
+            'Saco y chompa: 1 saco y 1 chompa',
+        ],[
+            20,
+            20,
+            20,
+            20,
+            20,
         ]);
 
-        array_map(function ($servicio){
+        array_map(function ($servicio, $detalles, $precio) {
             DB::table('servicio')->insert([
                 'unique_id' => Str::uuid(),
                 'descripcion' => $servicio,
+                'detalles' => $detalles,
+                'precio' => $precio,
                 'estado' => 'activo',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -84,6 +110,18 @@ class ServicioSeeder extends Seeder
             'Juegos de cama',
             'Cobijas o colchas',
             'Cortinas',
+        ],[
+            'Alfombras: 1 alfombra',
+            'Edredones: 1 edredón',
+            'Juegos de cama: 1 juego de cama',
+            'Cobijas o colchas: 1 cobija o colcha',
+            'Cortinas: 1 cortina',
+        ],[
+            20,
+            20,
+            20,
+            20,
+            20,
         ]);
     }
 }
